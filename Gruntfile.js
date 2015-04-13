@@ -50,7 +50,7 @@ module.exports = function (grunt) {
                 options: {
                     replacements: [{
                         pattern: 'ekGrid/ekGrid_template.html',
-                        replacement: 'bower_components/ekGrid/ekGrid_template.html'
+                        replacement: 'bower_components/ekGrid/html/ekGrid_template.html'
                     }]
                 }
             }

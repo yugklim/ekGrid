@@ -7,7 +7,7 @@ define('ekGridModule', ['angular', 'itemsRepository', 'extractKeysFrom'], functi
                     scope.items = itemsRepository.MockRepository.GetItems();
                     scope.keys = new extractKeysFrom(scope.items).getKeys();
                 },
-                templateUrl: 'bower_components/ekGrid/ekGrid_template.html'
+                templateUrl: 'bower_components/ekGrid/html/ekGrid_template.html'
             }
         }
     );
