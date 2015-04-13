@@ -1,5 +1,5 @@
 
-define(['angular', 'itemsRepository', 'extractKeysFrom'], function (angular, itemsRepository, extractKeysFrom) {
+define('ekGridModule', ['angular', 'itemsRepository', 'extractKeysFrom'], function (angular, itemsRepository, extractKeysFrom) {
     return angular.module('ekGridModule', []).
         directive('ekGrid', function () {
             return {

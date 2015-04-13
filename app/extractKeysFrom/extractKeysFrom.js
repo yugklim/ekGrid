@@ -5,7 +5,7 @@
  * we get the { f1, f2, ... fN}
  */
 ;
-define([], function () {
+define('extractKeysFrom', [], function () {
 
     return function extractKeysFrom(_items) {
         var items = _items;

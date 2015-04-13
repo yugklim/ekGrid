@@ -1,5 +1,5 @@
 ;
-define([], function () {
+define('itemsRepository', [], function () {
 
 return  function itemsRepository() {
 

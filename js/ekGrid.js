@@ -1,13 +1,5 @@
-;define(['require', 'angular', 'ekGridModule'], function (require, ng) {
-        require(['domReady!'], function (document) {
-            // this is angular module
-           ng.bootstrap(document, ['ekGridModule']);
-        });
-    }
-);
 
-
-define(['angular', 'itemsRepository', 'extractKeysFrom'], function (angular, itemsRepository, extractKeysFrom) {
+define('ekGridModule', ['angular', 'itemsRepository', 'extractKeysFrom'], function (angular, itemsRepository, extractKeysFrom) {
     return angular.module('ekGridModule', []).
         directive('ekGrid', function () {
             return {
@@ -15,7 +7,7 @@ define(['angular', 'itemsRepository', 'extractKeysFrom'], function (angular, ite
                     scope.items = itemsRepository.MockRepository.GetItems();
                     scope.keys = new extractKeysFrom(scope.items).getKeys();
                 },
-                templateUrl: 'ekGrid/ekGrid_template.html'
+                templateUrl: 'bower_components/ekGrid/ekGrid_template.html'
             }
         }
     );
@@ -32,7 +24,7 @@ define(['angular', 'itemsRepository', 'extractKeysFrom'], function (angular, ite
  * we get the { f1, f2, ... fN}
  */
 ;
-define([], function () {
+define('extractKeysFrom', [], function () {
 
     return function extractKeysFrom(_items) {
         var items = _items;
@@ -53,7 +45,7 @@ define([], function () {
 
 
 ;
-define([], function () {
+define('itemsRepository', [], function () {
 
 return  function itemsRepository() {
 
@@ -86,21 +78,4 @@ return  function itemsRepository() {
 
     }();
 
-});
-
-require.config({
-
-    paths: {
-        'domReady': '../bower_components/domReady/domReady',
-        'angular': '../bower_components/angular/angular'
-    },
-
-    shim: {
-        'angular': {
-            exports: 'angular'
-        }
-    },
-
-    // launch app
-    deps: ['bootstrap']
 });

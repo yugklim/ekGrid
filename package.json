@@ -27,6 +27,8 @@
     "karma-requirejs": "^0.2.2"
   },
   "dependencies": {
-    "grunt-contrib-concat": "^0.5.1"
+    "grunt-contrib-concat": "^0.5.1",
+    "grunt-string-replace": "^1.0.0",
+    "gulp-shell": "^0.4.0"
   }
 }
