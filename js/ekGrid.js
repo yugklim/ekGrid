@@ -13,10 +13,8 @@ define('ekGridModule', ['angular', 'itemsRepository', 'extractKeysFrom'], functi
     );
 });
 
-/*888*/
 
-
-/**##s*/
+/**##ssdf*/
 
 /**
  * Created by eklimenko on 30.03.2015.
