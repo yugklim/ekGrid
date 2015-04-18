@@ -16,7 +16,7 @@ define('ekGridModule', ['angular', 'itemsRepository', 'extractKeysFrom'], functi
 /*888*/
 
 
-/**##sdvwefdsdfwsdf*/
+/**##s*/
 
 /**
  * Created by eklimenko on 30.03.2015.
